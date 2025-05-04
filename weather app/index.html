@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trip Planner & Weather</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+   
+    <div class="card trip-planner">
+      <h2>Plan Your Trip</h2>
+      <input id="sourceInput" type="text" placeholder="Source" />
+      <input id="destinationInput" type="text" placeholder="Destination" />
+
+      
+      <input type="date" placeholder="Start Date" />
+      <input type="date" placeholder="End Date" />
+
+      <select>
+        <option>Choose Interest</option>
+        <option>Adventure</option>
+        <option>Culture</option>
+        <option>Nature</option>
+      </select>
+      <input type="number" placeholder="Budget (INR)" />
+      <button id="planBtn">Show My Plan</button>
+    </div>
+    <div class="card weather-card">
+      <h2>🌤️ Weather Info</h2>
+      <div class="weather">
+        <img src="images/clear.png" class="weather-icon" />
+        <h1 class="temp">--°C</h1>
+        <h2 class="city">City</h2>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" />
+            <div>
+              <p class="humidity">--%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" />
+            <div>
+              <p class="wind">-- km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "4sqC266Vdqp_2AJSRGHQ9",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="4sqC266Vdqp_2AJSRGHQ9"
+      domain="www.chatbase.co"
+      defer>
+    </script>
+</body>
+</html>
